@@ -1,0 +1,14 @@
+---
+layout: none
+---
+[
+  {% for post in site.posts %}
+    {
+      "title": "{{ post.title | escape }}",
+      "url": "{{ post.url | relative_url }}",
+      "date": "{{ post.date | date: "%Y-%m-%d" }}",
+      "categories": [{% for category in post.categories %}"{{ category }}"{% unless forloop.last %},{% endunless %}{% endfor %}],
+      "coordinates": {{ post.coordinates | jsonify }}
+    }{% unless forloop.last %},{% endunless %}
+  {% endfor %}
+] 

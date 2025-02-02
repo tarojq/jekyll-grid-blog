@@ -1,0 +1,22 @@
+title: Your actual blog name
+email: your actual email
+description: Write your actual blog description here
+baseurl: "/jekyll-grid-blog"
+url: "https://tarojq.github.io"
+twitter_username: yourtwitter
+github_username: your actual GitHub username
+
+# Build settings
+theme: minima
+plugins:
+  - jekyll-feed
+
+# Add these lines if they're not present
+permalink: /:year/:month/:day/:title/
+markdown: kramdown
+
+# Add these lines if they're not present
+include:
+  - assets
+  - _layouts
+  - _posts
