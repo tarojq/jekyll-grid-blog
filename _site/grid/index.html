@@ -46,10 +46,6 @@ const posts = [
     
 ];
 
-document.addEventListener('DOMContentLoaded', function() {
-    createNodes(posts);
-});
-
 function createNodes(posts) {
     const grid = document.querySelector('.project-nodes');
     
@@ -58,7 +54,6 @@ function createNodes(posts) {
         node.className = 'project-node';
         node.setAttribute('data-title', post.title);
         
-        // Position node based on coordinates
         const x = post.coordinates ? post.coordinates[0] * 100 : 50;
         const y = post.coordinates ? post.coordinates[1] * 100 : 50;
         
@@ -73,7 +68,8 @@ function createNodes(posts) {
         grid.appendChild(node);
     });
 }
+
+document.addEventListener('DOMContentLoaded', createNodes.bind(null, posts));
 </script> 
-    <script src="/assets/js/grid.js"></script>
 </body>
 </html> 
