@@ -1,22 +1,6 @@
 [
   
     {
-      "title": "My Second Blog Post",
-      "url": "/2024/03/21/second-post/",
-      "date": "2024-03-21",
-      "categories": ["blog"],
-      "coordinates": null
-    },
-  
-    {
-      "title": "Your Post Title",
-      "url": "/2024/03/21/new-post/",
-      "date": "2024-03-21",
-      "categories": ["tech","metaphysics"],
-      "coordinates": [0.8,0.4]
-    },
-  
-    {
       "title": "My First Blog Post",
       "url": "/2024/03/20/my-first-post/",
       "date": "2024-03-20",
