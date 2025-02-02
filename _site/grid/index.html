@@ -26,6 +26,7 @@
 </div>
 
 <script>
+// Embed posts data directly in the page
 const posts = [
     
     {
@@ -48,6 +49,7 @@ const posts = [
 
 function createNodes(posts) {
     const grid = document.querySelector('.project-nodes');
+    grid.innerHTML = ''; // Clear existing nodes
     
     posts.forEach(post => {
         const node = document.createElement('div');
@@ -69,7 +71,9 @@ function createNodes(posts) {
     });
 }
 
-document.addEventListener('DOMContentLoaded', createNodes.bind(null, posts));
+// Initialize nodes on page load and when navigating back
+document.addEventListener('DOMContentLoaded', () => createNodes(posts));
+window.addEventListener('pageshow', () => createNodes(posts));
 </script> 
 </body>
 </html> 
