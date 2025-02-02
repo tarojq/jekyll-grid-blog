@@ -13,4 +13,4 @@ This is my first blog post! You can write **markdown** here.
 - List item 1
 - List item 2
 
-![Image Description](/assets/images/your-image.jpg) 
+![Image Description](/assets/images/your-image.jpg)
