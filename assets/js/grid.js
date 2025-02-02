@@ -1,12 +1,14 @@
 document.addEventListener('DOMContentLoaded', function() {
     console.log('DOM loaded, fetching posts...');
-    fetch('{{ "/posts.json" | relative_url }}')
+    const grid = document.getElementById('post-grid');
+    const postsUrl = grid.getAttribute('data-posts-url');
+    
+    fetch(postsUrl)
         .then(response => response.json())
         .then(posts => createNodes(posts))
         .catch(error => {
             console.error('Error loading posts:', error);
-            document.getElementById('post-grid').innerHTML = 
-                'Error loading posts: ' + error.message;
+            grid.innerHTML = 'Error loading posts: ' + error.message;
         });
 
     // Modal code
