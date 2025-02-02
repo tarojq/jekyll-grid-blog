@@ -41,7 +41,8 @@ function createNodes(posts) {
         node.style.top = `${y}%`;
         
         node.addEventListener('click', () => {
-            window.location.href = post.url;
+            // Ensure URL includes baseurl
+            window.location.href = '{{ site.baseurl }}' + post.url;
         });
         
         grid.appendChild(node);

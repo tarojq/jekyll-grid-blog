@@ -16,8 +16,9 @@ body {
 /* Central Container */
 .center-container {
     position: relative;
-    width: 40vmin;
-    height: 40vmin;
+    width: min(40vmin, 90vw);
+    height: min(40vmin, 90vw);
+    margin: auto;
     background-image: 
         linear-gradient(to right, rgba(255, 182, 193, 0.5) 0.5px, transparent 0.5px),
         linear-gradient(to bottom, rgba(255, 182, 193, 0.5) 0.5px, transparent 0.5px);
@@ -58,8 +59,8 @@ body {
 }
 
 .project-node {
-    width: 0.5rem;
-    height: 0.5rem;
+    width: min(0.5rem, 2vw);
+    height: min(0.5rem, 2vw);
     background-color: black;
     border-radius: 50%;
     cursor: pointer;
@@ -81,7 +82,7 @@ body {
     background-color: white;
     color: black;
     padding: 0.2rem 0.5rem;
-    font-size: 0.8rem;
+    font-size: min(0.8rem, 3vw);
     border-radius: 3px;
     opacity: 0;
     pointer-events: none;
@@ -104,32 +105,32 @@ body {
     font-weight: bold;
     color: black;
     padding: 0.2rem 0.5rem;
-    font-size: 0.9rem;
+    font-size: min(0.9rem, 3.5vw);
     z-index: 1;
 }
 
 .art {
     top: 0;
     left: 50%;
-    transform: translate(-50%, -150%);
+    transform: translate(-50%, -120%);
 }
 
 .metaphysics {
     top: 50%;
     right: 0;
-    transform: translate(150%, -50%);
+    transform: translate(120%, -50%);
 }
 
 .tech {
     bottom: 0;
     left: 50%;
-    transform: translate(-50%, 150%);
+    transform: translate(-50%, 120%);
 }
 
 .ethics {
     top: 50%;
     left: 0;
-    transform: translate(-150%, -50%);
+    transform: translate(-120%, -50%);
 }
 
 /* Hide modal */
@@ -166,4 +167,11 @@ body {
 
 .category-tech { background: #e6f3ff; }
 .category-blog { background: #fff0e6; }
-.category-tutorials { background: #e6ffe6; } 
+.category-tutorials { background: #e6ffe6; }
+
+/* Add media query for very small screens */
+@media (max-width: 480px) {
+    .center-container {
+        margin: 2rem auto;
+    }
+} 
