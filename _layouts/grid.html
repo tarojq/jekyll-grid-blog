@@ -13,24 +13,16 @@ layout: blank
     <div class="label ethics">Ethics</div>
 
     <!-- Project Nodes -->
-    <div class="project-nodes" id="post-grid">
-        <!-- Nodes will be inserted here by JavaScript -->
-    </div>
+    <div class="project-nodes" id="post-grid"></div>
 </div>
 
+<script type="application/json" id="post-data">
+{% assign posts = site.posts | jsonify %}
+{{ posts }}
+</script>
+
 <script>
-// Embed posts data directly in the page
-const posts = [
-    {% for post in site.posts %}
-    {
-        "title": "{{ post.title | escape }}",
-        "url": "{{ post.url | relative_url }}",
-        "date": "{{ post.date | date: "%Y-%m-%d" }}",
-        "categories": {{ post.categories | jsonify }},
-        "coordinates": {{ post.coordinates | jsonify }}
-    }{% unless forloop.last %},{% endunless %}
-    {% endfor %}
-];
+const postData = JSON.parse(document.getElementById('post-data').textContent);
 
 function createNodes(posts) {
     const grid = document.querySelector('.project-nodes');
@@ -45,8 +37,8 @@ function createNodes(posts) {
         const y = post.coordinates ? post.coordinates[1] * 100 : 50;
         
         node.style.position = 'absolute';
-        node.style.left = x + '%';
-        node.style.top = y + '%';
+        node.style.left = `${x}%`;
+        node.style.top = `${y}%`;
         
         node.addEventListener('click', () => {
             window.location.href = post.url;
@@ -57,6 +49,6 @@ function createNodes(posts) {
 }
 
 // Initialize nodes on page load and when navigating back
-document.addEventListener('DOMContentLoaded', () => createNodes(posts));
-window.addEventListener('pageshow', () => createNodes(posts));
+document.addEventListener('DOMContentLoaded', () => createNodes(postData));
+window.addEventListener('pageshow', () => createNodes(postData));
 </script> 
