@@ -1,11 +1,43 @@
 [
   
     {
-      "title": "My First Blog Post",
-      "url": "/2024/03/20/my-first-post/",
+      "title": "A Single Slice Of American Cheese",
+      "url": "/jekyll-grid-blog/2025/02/21/american-cheese/",
+      "date": "2025-02-21",
+      "categories": ["art","tech","ethics"],
+      "coordinates": [0.29,0.3]
+    },
+  
+    {
+      "title": "Microsoft&#39;s Copilot Vision - Oracle, Orb or Panopticon",
+      "url": "/jekyll-grid-blog/2024/03/20/microsoft-orb/",
       "date": "2024-03-20",
-      "categories": ["tech","metaphysics"],
-      "coordinates": [0.7,0.3]
+      "categories": ["tech","ethics"],
+      "coordinates": [0.15,0.9]
+    },
+  
+    {
+      "title": "Human Compatible AI And The Gorilla Problem",
+      "url": "/jekyll-grid-blog/2024/03/20/human-compatible-ai-and-the-control-problem/",
+      "date": "2024-03-20",
+      "categories": ["tech","ethics"],
+      "coordinates": [0.25,0.85]
+    },
+  
+    {
+      "title": "Large Language Models Have Passed The Self Replicating Red Line",
+      "url": "/jekyll-grid-blog/2024/03/20/quip-self-replicating-AI/",
+      "date": "2024-03-20",
+      "categories": ["tech"],
+      "coordinates": [0.555,0.9]
+    },
+  
+    {
+      "title": "Aesthetics Are Open Source",
+      "url": "/jekyll-grid-blog/2024/02/01/open-source-aesthetics/",
+      "date": "2024-02-01",
+      "categories": ["art","tech","ethics"],
+      "coordinates": [0.2,0.48]
     }
   
 ] 

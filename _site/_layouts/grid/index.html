@@ -3,35 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/assets/css/grid.css">
+    <link rel="stylesheet" href="/jekyll-grid-blog/assets/css/grid.css">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;700&display=swap" rel="stylesheet">
     <title>Research Grid</title>
 </head>
 <body>
+    <div class="grid-page-wrapper"> <!-- New wrapper -->
     <div class="center-container">
-    <!-- Axes -->
-    <div class="line vertical"></div>
-    <div class="line horizontal"></div>
+        <!-- Axes -->
+        <div class="line vertical"></div>
+        <div class="line horizontal"></div>
 
-    <!-- Labels -->
-    <div class="label art">Art</div>
-    <div class="label metaphysics">Metaphysics</div>
-    <div class="label tech">Tech</div>
-    <div class="label ethics">Ethics</div>
+        <!-- Labels -->
+        <div class="label art">Art</div>
+        <div class="label metaphysics">Metaphysics</div>
+        <div class="label tech">Tech</div>
+        <div class="label ethics">Ethics</div>
 
-    <!-- Project Nodes -->
-    <div class="project-nodes" id="post-grid"></div>
-</div>
+        <!-- Project Nodes -->
+        <div class="project-nodes" id="post-grid"></div>
+    </div>
+
+    <div class="action-buttons-container">
+        <a href="https://ko-fi.com/taroqureshi" class="donate-button" target="_blank" rel="noopener noreferrer">Donate</a>
+        <a href="https://bsky.app/profile/tarojq.bsky.social" class="donate-button" target="_blank" rel="noopener noreferrer">BlueSky</a>
+        <a href="https://www.linkedin.com/in/taro-qureshi-07b11326b/" class="donate-button" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+    </div>
+</div> <!-- End of new wrapper -->
 
 <script type="application/json" id="post-data">
-
 [
     {
-        "title": "My First Blog Post",
-        "url": "/2024/03/20/my-first-post/",
+        "title": "A Single Slice Of American Cheese",
+        "url": "/jekyll-grid-blog/2025/02/21/american-cheese/",
+        "date": "2025-02-21",
+        "categories": ["art","tech","ethics"],
+        "coordinates": [0.29,0.3]
+    },
+
+    {
+        "title": "Microsoft's Copilot Vision - Oracle, Orb or Panopticon",
+        "url": "/jekyll-grid-blog/2024/03/20/microsoft-orb/",
         "date": "2024-03-20",
-        "categories": ["tech","metaphysics"],
-        "coordinates": [0.7,0.3]
+        "categories": ["tech","ethics"],
+        "coordinates": [0.15,0.9]
+    },
+
+    {
+        "title": "Human Compatible AI And The Gorilla Problem",
+        "url": "/jekyll-grid-blog/2024/03/20/human-compatible-ai-and-the-control-problem/",
+        "date": "2024-03-20",
+        "categories": ["tech","ethics"],
+        "coordinates": [0.25,0.85]
+    },
+
+    {
+        "title": "Large Language Models Have Passed The Self Replicating Red Line",
+        "url": "/jekyll-grid-blog/2024/03/20/quip-self-replicating-AI/",
+        "date": "2024-03-20",
+        "categories": ["tech"],
+        "coordinates": [0.555,0.9]
+    },
+
+    {
+        "title": "Aesthetics Are Open Source",
+        "url": "/jekyll-grid-blog/2024/02/01/open-source-aesthetics/",
+        "date": "2024-02-01",
+        "categories": ["art","tech","ethics"],
+        "coordinates": [0.2,0.48]
     }
 ]
 </script>
@@ -65,6 +104,6 @@ function createNodes(posts) {
 
 document.addEventListener('DOMContentLoaded', () => createNodes(postData));
 window.addEventListener('pageshow', () => createNodes(postData));
-</script> 
+</script>
 </body>
 </html> 

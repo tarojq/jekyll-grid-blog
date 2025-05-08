@@ -1,0 +1,38 @@
+---
+layout: post
+title: "Microsoft's Copilot Vision - Oracle, Orb or Panopticon"
+date: 2024-03-20
+categories:
+  - tech
+  - ethics
+coordinates:
+  - 0.15
+  - 0.9
+---
+
+Microsoft wants an AI Companion to follow you around the web. This is only the beginning. That's the first line of this Vox article wherein Adam Clark Estes sits down the the head of Microsoft's AI division, Mustafar Suleyman. The article is sandwiched neatly between another titled 'The Case For Conservatism' and another titled 'The Surprising Thing I Learned From Quitting Spotify - I Had Trained The Algorithm Too Well'. 
+
+AI Assistants have demonstrable productivity gains. A 2023 study conducted by Fabrizio Dell'Acqua at Harvard Business School found that whilst conducting a task specifically designed to fall within ChatGPT's capabilities, defined here as coming up with an ordered list of production steps, creating a marketing slogan and writing a 2500 word article, worker performance increased by 40%, as assessed by human evaluators at the end of the task. However, it is double-edged - in the group that were set a task deliberately designed to fall outside of what ChatGPT is good at, the researchers observed a performance decrease. The workers would switch off their brains and follow what the agent recommended, which was more likely to be uncorrected leading to a net decrease in productivity of 24%. 
+
+Copilot Vision is an extension of the same thing. Seemingly pitched to be more of a decision making companion than a productivity booster, the issues will be nonetheless impactful - as anyone who has tried to craft a holiday itinerary with ChatGPT will attest. 
+
+Productivity gains are not the most salient metric to track when looking at maximising social good, but it is relevant. Presumably, higher productivity will at some point translate into more efficient products, less waste and greater employee wellbeing - at the same time as it permits workers to be on autopilot, displaying low levels of criticality towards what their copilots bring to them leading to disincentivized creativity and problem solving faculties. What we can also look at is potential upside - whilst the relatively forward thinking voice-first interaction design does present a gain for accessibility, what else does it offer? Can we not google ugly sweaters ourselves? Is there not something missing if we show up to our work Christmas party in a sweater that was picked out for us by a disembodied surveillance bot/foster mother?
+
+In June of 2024, Microsoft pitched and released a new Windows feature called 'Recall', intended as a kind of perfect, AI-enabled memory for your device. What Recall did, in practice, was take a screenshot of the user's activity every five seconds and use it as fodder for AI analysis - collected indefinitely on the user's machine by default. As Dave Aitel, founder of security firm Immunity (but previously of the NSA) puts it - 'anything that penetrates your computer for even a second can get your whole history'. Any hacker who gains so much as a temporary foothold on a user's device gives them a long-term panopticon view of the victim's digital life. 
+
+Later in 2024, Recall was Recalled, but shades of it persist in Copilot Vision. How much do we trust that it deletes all traces at the close of a session? How much do we trust Microsoft with any kind of backdoor into our system, given the following - 
+
+In 2022, Microsoft leaked 2.4 terabytes of customer data out of a single misconfigured Azure blob storage bucket.
+
+In 2023, Microsoft revealed that a Chinese hacker group was able to access the email systems of 25 organizations, including multiple government agencies. 
+In September of 2023, an internal postmortem revealed that the key ended up in a crash dump that crossed outside of Microsoft's secure servers, and was repeatedly missed by multiple layers of flagging software. It was also revealed that the cryptographic key could have been used to sign validation tokens for any Outlook cloud account, consumer or enterprise. A skeleton key for perhaps all of Microsoft's cloud. 
+
+Recall's recall shows that Microsoft has a vested interest in collecting information about your system. it only stopped when it was caught. The most benign justification for this is that it wants to improve how Copilot interacts with your device. Less benign is that it wants to track your browsing data in order to sell you products with more and more direct targeting. 
+
+Consider something worse. Twelve years ago, in 2013, Edward Snowden brought to light the extent to which Microsoft collaborated with the NSA on a top-secret program codenamed Prism, which aimed to allow the FBI and the NSA pre-encryption access to Outlook.com, Skype and many more. 
+
+In the 18th Century, philosopher and social theorist Jeremy Bentham designed a perfect prison that he named the Panopticon - the architectural principles included a rotunda in which prisoners were detained with an inspection tower at the centre from which the guards are able to watch the inmates. Despite it being physically impossible for a single guard to observe all the inmates at once, the fact that inmates cannot know when they are being watched motivates them to act as though they are being watched at all times. Now, instead of a prisoner in an institution, you are behind your laptop, on the couch, buying a festive Ted Lasso sweater.
+
+Addendum:
+
+ Surveillance carries with it direct potential for harm. In the past month, the US has denied entry to a French scientist for sending text correspondence critical of Trump, and indefinitely detained Palestinian activist Mahmoud Khalil without a warrant. It may be unwise to google 'free palestine demonstration' with Copilot Vision enabled. Of course, the same thing applies to Bing search.

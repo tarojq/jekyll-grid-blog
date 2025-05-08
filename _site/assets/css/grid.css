@@ -7,8 +7,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #f0f0f0;
+    background-color: #000000;
     font-family: Nunito, sans-serif;
+    font-weight: 100;  /* Extra Light */
     margin: 0;
     padding: 20px;
 }
@@ -23,14 +24,14 @@ body {
         linear-gradient(to right, rgba(255, 182, 193, 0.5) 0.5px, transparent 0.5px),
         linear-gradient(to bottom, rgba(255, 182, 193, 0.5) 0.5px, transparent 0.5px);
     background-size: 2vmin 2vmin;
-    background-color: #f0f0f0;
+    background-color: #000000;
     border: 1px solid rgba(255, 182, 193, 0.5);
 }
 
 /* Axes */
 .line {
     position: absolute;
-    background-color: black;
+    background-color: #33ff7a;
     z-index: 3;
 }
 
@@ -61,7 +62,7 @@ body {
 .project-node {
     width: min(0.5rem, 2vw);
     height: min(0.5rem, 2vw);
-    background-color: black;
+    background-color: #33ff7a;
     border-radius: 50%;
     cursor: pointer;
     position: absolute;
@@ -79,15 +80,17 @@ body {
     bottom: -1.5rem;
     left: 50%;
     transform: translateX(-50%);
-    background-color: white;
-    color: black;
+    background-color: #000000; /* Changed to black */
+    color: #33ff7a;            /* Changed to #33ff7a */
     padding: 0.2rem 0.5rem;
     font-size: min(0.8rem, 3vw);
-    border-radius: 3px;
+    border-radius: 0;          /* Changed to 0 for sharp corners */
+    border: 1px solid #33ff7a; /* Added border */
     opacity: 0;
     pointer-events: none;
     transition: opacity 0.3s ease;
     white-space: nowrap;
+    z-index: 4; /* Added z-index to ensure it's above other elements if needed */
 }
 
 .project-node:hover::after {
@@ -102,8 +105,8 @@ body {
 /* Labels */
 .label {
     position: absolute;
-    font-weight: bold;
-    color: black;
+    font-weight: 100;  /* Extra Light */
+    color: #33ff7a;
     padding: 0.2rem 0.5rem;
     font-size: min(0.9rem, 3.5vw);
     z-index: 1;
@@ -174,4 +177,85 @@ body {
     .center-container {
         margin: 2rem auto;
     }
-} 
+}
+
+/* Home Button / Back Navigation Button Styling */
+.home-button {
+    background-color: #000000 !important; /* Black background */
+    color: #33ff7a !important;            /* Text color */
+    border: 1px solid #33ff7a !important; /* 1px border */
+    border-radius: 0 !important;          /* Square corners */
+    
+    /* Retaining some potentially useful existing styles from inline */
+    display: inline-block;
+    padding: 0.3rem 0.6rem;
+    text-decoration: none;
+    margin-top: 0.5rem;
+    font-weight: 400; /* As per existing inline style */
+    font-size: 1.2rem;  /* As per existing inline style */
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.home-button:hover {
+    background-color: #33ff7a !important; /* Invert colors on hover */
+    color: #000000 !important;
+}
+
+/* Post Page Text Styling */
+.post-container header h1,
+.post-container article,
+.post-container article p,
+.post-container article code {
+    color: #33ff7a;
+}
+
+/* Styling for Horizontal Rules in posts */
+.post-container article hr {
+    border: none; /* Remove the default browser border */
+    height: 1px; /* Define a height for the rule */
+    background-color: #33ff7a; /* Set the desired green color */
+    margin-top: 2rem; /* Add some space above the rule */
+    margin-bottom: 2rem; /* Add some space below the rule */
+}
+
+/* Wrapper for grid page content to include donate button */
+.grid-page-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers the grid and button block horizontally */
+  gap: 25px; /* Provides space between the grid and the button block */
+}
+
+/* Container for action buttons (Donate, BlueSky, LinkedIn) */
+.action-buttons-container {
+  display: flex;
+  flex-wrap: wrap; /* Allows buttons to wrap on smaller screens */
+  justify-content: center; /* Centers buttons if they don't fill the width */
+  margin-top: 20px; /* Space above the button block */
+  gap: 3.5px; /* Space between individual buttons */
+}
+
+/* Donate Button Styling (also applies to BlueSky and LinkedIn buttons) */
+.donate-button {
+    display: inline-block;
+    /* margin-top: 1rem; */ /* Consider removing if gap from action-buttons-container is sufficient */
+    padding: 0.1rem 1.2rem;
+    background-color: #000000; /* Black background */
+    color: #33ff7a;            /* Text color (same green) */
+    border: 1px solid #33ff7a; /* Border (same green) */
+    border-radius: 0;          /* Square corners */
+    text-decoration: none;
+    font-family: 'Nunito', sans-serif; /* Consistent font */
+    font-weight: 100;          /* Consistent weight, similar to home-button */
+    font-size:min(0.9rem, 3.5vw);          /* Adjust as needed */
+    text-align: center;
+    opacity: 0.2; /* Added: Set initial opacity to 20% */
+    transition: background-color 0.2s ease, color 0.2s ease, opacity 0.2s ease; /* Added opacity to transition */
+}
+
+.donate-button:hover {
+    background-color: #33ff7a; /* Invert colors on hover */
+    color: #000000;
+    opacity: 1; /* Added: Set opacity to 100% on hover */
+}
+

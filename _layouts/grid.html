@@ -1,23 +1,30 @@
 ---
 layout: blank
 ---
-<div class="center-container">
-    <!-- Axes -->
-    <div class="line vertical"></div>
-    <div class="line horizontal"></div>
+<div class="grid-page-wrapper"> <!-- New wrapper -->
+    <div class="center-container">
+        <!-- Axes -->
+        <div class="line vertical"></div>
+        <div class="line horizontal"></div>
 
-    <!-- Labels -->
-    <div class="label art">Art</div>
-    <div class="label metaphysics">Metaphysics</div>
-    <div class="label tech">Tech</div>
-    <div class="label ethics">Ethics</div>
+        <!-- Labels -->
+        <div class="label art">Art</div>
+        <div class="label metaphysics">Metaphysics</div>
+        <div class="label tech">Tech</div>
+        <div class="label ethics">Ethics</div>
 
-    <!-- Project Nodes -->
-    <div class="project-nodes" id="post-grid"></div>
-</div>
+        <!-- Project Nodes -->
+        <div class="project-nodes" id="post-grid"></div>
+    </div>
+
+    <div class="action-buttons-container">
+        <a href="https://ko-fi.com/taroqureshi" class="donate-button" target="_blank" rel="noopener noreferrer">Donate</a>
+        <a href="https://bsky.app/profile/tarojq.bsky.social" class="donate-button" target="_blank" rel="noopener noreferrer">BlueSky</a>
+        <a href="https://www.linkedin.com/in/taro-qureshi-07b11326b/" class="donate-button" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+    </div>
+</div> <!-- End of new wrapper -->
 
 <script type="application/json" id="post-data">
-{% assign posts_with_urls = site.posts | map: "url" | map_with: site.posts %}
 [{% for post in site.posts %}
     {
         "title": {{ post.title | jsonify }},
@@ -58,4 +65,4 @@ function createNodes(posts) {
 
 document.addEventListener('DOMContentLoaded', () => createNodes(postData));
 window.addEventListener('pageshow', () => createNodes(postData));
-</script> 
+</script>
