@@ -10,6 +10,8 @@ coordinates:
   - 0.8
 ---
 
+(I started this project as a way of documenting my thinking in public. This includes polemics. My positions will change and develop over time. I ask the reader to understand this as a feature, not a bug.)
+
 Big Data is a structure made out of corporations, and the Robin Hood-esque spirit of the early days of Silicon Valley has given birth to semi-autonomous weapons under the command of scrying orbs that repeatedly mistake civilian hospitals for combatant outposts. If we generously assume that human rights violations are still meaningful, States are left playing catch-up, attempting to run defence with a toolkit that runs at glacial speed and most likely off a Lenovo Thinkpad. Policy has never been more crucial, or more readily outmanoeuvred. 
 
  I am left wing on a great number of social matters, many of which rely on the utopian (and perhaps fundamentally impossible) idea of the State as benign and nurturing to its constituents. I have held, and expressed, a great many anarcho-socialist ideas. This is incompatible with the idea of an expanded State, but the enemy of my enemy is my friend and that enemy is Neoliberalism. 
