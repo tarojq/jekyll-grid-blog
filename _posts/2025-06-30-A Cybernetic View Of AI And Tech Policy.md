@@ -3,7 +3,7 @@ layout: post
 title: "A Cybernetic View Of AI And Tech Policy"
 date: 2025-07-30
 categories: [tech, ethics]
-coordinates: [0.56, 0.7]  # [x, y] where each value is between 0 and 1
+coordinates: [0.2, 0.7]  # [x, y] where each value is between 0 and 1
 ---
 
 I recently contributed a pair of literature reviews to a research group clustered around lethal autonomous weapons as well as data tools designed to identify, track and designate targets for killing. This is no longer dystopian science fiction - these tools are in use today, employed by a genocidal, nuclear superpower against the people of Gaza, Palestine. 
